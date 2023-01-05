@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: Arial;
+}
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none; ;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.bg{
+    width: 110%;
+    height: 100%;
+    position: absolute;
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 150%;
+    background-image:url(https://scontent.fbkk22-2.fna.fbcdn.net/v/t39.30808-6/323884073_1188795011730912_2898209553866853379_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF-1KqMblqcqnQbEX8WYvva9fZiRrvg2-j19mJGu-Db6PxfKP4DOvqMXu1RGuQQS4NsvL7GkC7RRXub6dNpHZio&_nc_ohc=MwXy13GZUr4AX-wAazY&_nc_ht=scontent.fbkk22-2.fna&oh=00_AfDe0XkKdbCQQmgUVzvJdzF_eVQV0w1rXfOuD5Pnu2NxIw&oe=63BAC591) ;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter:brightness(45%) ;
+}
+.menu{
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .menu ul{
+    display: flex;
+    
+ }
+ .menu ul li{
+    padding:0 17px;
+ }
+ .menu ul li a{
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 24px;
+ }
+ .content{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    display: flex;
+ }
+ .content .header,.grid-card{
+    width: 50%;
+    position: relative;
+    padding: 20px;
+ }
+ .content .header{
+    color: aliceblue;
+ }
+ .content .header h3{
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+ }
+ .content .header h3 i{
+    color: chocolate;
+ }
+ .content .header h1{
+    font-size: 4rem;
+    color: chocolate;
+ }
+ .content .header p{
+    opacity: 0.8; ;
+ }
+ .grid-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    
+ }
+.grid-card .box{
+    width: 100%;
+    height: 230 px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+    position: relative;
+}
+.bg1{
+     background-image: url(https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-6/323785869_1853487755011738_2356985174073043442_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGic26s5S2FBjV5Ws6F0Ed9SuMJrpy-wCpK4wmunL7AKnghjuehHW1ut-HL81Jfbg_pQWsIFgxzC7owVu0cOo5F&_nc_ohc=ZK3udS_r3wQAX81McTv&_nc_ht=scontent.fbkk22-1.fna&oh=00_AfCw6LAMCr2hoPK3AdP5T73FgfwGqat0XC6jMuWbe6PpRQ&oe=63BB65F9);
+    }
+.bg2{
+    background-image: url(https://scontent.fbkk22-8.fna.fbcdn.net/v/t39.30808-6/324181135_486719003650436_2164715465404139865_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFDktfX9PFF6KvXnUMN5oh9C_D-sG5gi-8L8P6wbmCL76vmEEaahuTQf4Hx3XG6IEq6eheqreIxhzOCcfs-dtpd&_nc_ohc=kKgySTCZdAcAX8pHX_1&tn=dqlrirrTi4QrO09b&_nc_ht=scontent.fbkk22-8.fna&oh=00_AfCxNakWGzluPL0mTCRXIDiJ5xoH3-AxcakXQikAn-coLQ&oe=63B9DA95);
+}
+.bg3{
+    background-image: url(https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-6/324110173_1186578638652985_7127836426102437521_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeE4CwY7dSYmOVE6zAm2zmp7FjY-pwpJCFoWNj6nCkkIWjc9RMGP00Rhpk9xWBzdyHrJY2CxU11eK6wExkNHVM50&_nc_ohc=4jAxGJKjYsEAX-ymxgR&tn=dqlrirrTi4QrO09b&_nc_ht=scontent.fbkk22-1.fna&oh=00_AfAx9dQd1goMus9H5RgpurzL4fYhpyakI8Aeho4gUO68Rw&oe=63BB7BF9);
+}
+.bg4{
+    background-image: url(https://www.techtalkthai.com/wp-content/uploads/2019/12/gmail_banner_1-600x313.png);
+}
+.content .box h2{
+    position: relative;
+    color: aliceblue;
+    padding: 75px 80px;
+    margin: auto auto;
+    backdrop-filter:brightness(70%) ;
+    border-radius: 20px;
+}
+.content .box:hover{
+    transform:translateY(-15px);
+}
+
